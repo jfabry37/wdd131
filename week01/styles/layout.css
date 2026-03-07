@@ -8,50 +8,57 @@
 
 body{
     display: grid;
-    grid-template-columns: 1fr  1fr ;    
-    grid-template-rows: 1fr 1fr 1fr;
+    height: 100vh;
+    grid-template-columns: 1fr;    
+    grid-template-rows: auto 1fr auto;
 }
 header{
-    grid-column: 1/4 ;
+    grid-column: 1/3 ;
+    grid-row: 1/2;
+    display: grid;
 }
 
-nav{
-    background-color: rgb(50, 50, 50); 
-    padding: 5rem 0px 0px;
-}
-.header{
+h1{
     display: flex;
+    padding: 2rem;
+    color: white;
+    font-size: medium;
+    background-color: royalblue;
 }
 
 ul {
     background-color: black;
     display: flex;
     justify-content: space-around;
-    padding: .5rem;
+    padding: 1rem;
     font-size: small;
     list-style-type:none;
 }
 main{
-    grid-column: 1/4;
+    grid-column: 1/3;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-
+    grid-template-columns:  1fr  1fr ;
 }
 
 .main {
+    display: flex;
+    grid-column: 1/2;
     color: rgb(50, 49, 49);
     background-color: rgb(186, 184, 184);
-    
+    align-items: center;
+    padding: 5px;
 }
 .aside{
-
+    display: flex;
+    grid-column: 2/3;
     background-color: white;
     color: rgb(82, 82, 82);
-
+    align-items: center;
+    padding: 5px;
 }
 
 footer{
-    grid-column: 1/4;
+    grid-column: 1/3;
     grid-row: 3/4;
     padding: 2rem;
     background-color: rgb(53, 52, 52);
