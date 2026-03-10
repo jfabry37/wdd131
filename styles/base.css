@@ -106,8 +106,8 @@ footer{
     text-align: center;
 }
 
-#lastModified{
+#modified{
     font-size: small;
     padding: 1rem;
-    color: rgb(133, 133, 23);
+    color: var(--accent-color1);
 }
