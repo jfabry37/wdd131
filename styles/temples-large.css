@@ -1,0 +1,39 @@
+@media(min-width: 640px){
+nav ul{
+    display:flex;
+    justify-content: space-around;
+}
+
+}
+
+@media (min-width:640px ){
+    main{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        max-width: 700px;
+        padding: .50rem;
+        margin: .50rem auto;
+        justify-content: center;
+    }
+    h2{
+    grid-column: 1/4;
+    padding: .50rem;
+    margin: .50rem;
+    text-align: center;
+}
+
+ }
+
+ @media (min-width: 640px){
+    .menu{
+    display: none;
+}
+    .navigation ul li{
+        display: block;
+    }
+
+    .navigation ul {
+    display: flex;
+    justify-content: space-around;
+    } 
+}

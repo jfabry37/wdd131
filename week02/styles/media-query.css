@@ -1,0 +1,22 @@
+body{
+    font-family:  "Fira Sans", sans-serif;
+}
+
+header, main, footer{
+max-width: 640px;
+margin: 1rem auto;
+padding: 5px;
+border: solid 2px black;
+background-color: rgb(146, 146, 220);
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;    
+}
+
+section{
+    padding: 1rem;
+    background-color: rgb(226, 226, 232);
+}
