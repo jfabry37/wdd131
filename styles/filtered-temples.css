@@ -1,0 +1,132 @@
+:root{
+    --primary-color: rgb(136, 136, 255);
+    --secondary-color: rgb(208, 211, 214);
+    --accent-color:black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Fira Sans", sans-serif;
+}
+.navigation ul{
+    display: none;
+}
+.menu::before{
+    content: "☰";
+}
+
+.navigation.open ul {
+    display:block;
+}
+.menu.open::before{
+    content: "❌";
+}
+
+header{
+    background-color: var(--primary-color);
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    display: flex;
+}
+h1{
+    justify-self: left;
+    display: inline-block;
+    /* padding: 1rem; */
+}
+
+nav{
+    display: flex;
+    color: var(--accent-color); 
+    padding: 5px;
+    margin: 5px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    
+    /* display: inline-block; */
+    padding: .5rem;
+    margin: .5rem;
+    list-style: none;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: var(--accent-color);
+    text-align: center;
+    border: 1px solid transparent;
+
+}
+
+nav a:hover{
+    border: 1px solid white;
+    background-color: rgb(241, 241, 129);
+}
+
+
+
+main{
+
+    /* max-width: 800px; */
+    padding: 15px;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+   
+}
+
+h2{
+    padding: .50rem;
+    margin: .50rem;
+    text-align: center;
+    grid-column: 1 / 3;
+  
+}
+
+
+.templeTable{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1 / 2;
+    width: 100%;
+    height:auto;
+    text-align: center;
+    grid-gap: 10px;
+    padding: 10px;
+    margin: 0 auto;
+    
+}
+section{
+    background-color: var(--secondary-color);
+    padding: 10px;
+    margin: .5rem;
+}
+.templeTable img{
+    width: 400px;
+    height: 250px;
+    text-align: center;
+}
+
+.templeTable selection
+{
+    background-color: lightslategray;
+}
+
+footer{
+    text-align: center;
+    background-color: var(--primary-color);
+}
