@@ -5,6 +5,7 @@
     --border-color: rgb(76, 50, 50);
     --text-color: rgb(244, 242, 242);
     --body-font: "Fira Sans", sans-serif;
+    --accent-font: "Roboto", sans-serif;
 }
 
 *{
@@ -44,14 +45,23 @@ h1{
     justify-self: center;
 }
 
+h1,h2,h3{
+    font-family: var(--accent-font);
+}
 .name,
 .purpose,
-.scenarios
+.scenarios,
+.colors,
+.typography
 {
     padding: 1em;
     background-color: var(--secondary-color);
     margin: .5rem;
     border:2px solid var(--border-color);
+}
+
+.scenarios p{
+    padding: .5em;
 }
 
 .image{
