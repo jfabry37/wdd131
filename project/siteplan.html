@@ -4,28 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <meta name="description" content="A website to help gardeners in Central Washington plan their vegetable gardens based on planting times and frost dates.">
+    <meta name="author" content="Julean Chantry">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <script src="scripts/siteplan.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,100;1,500&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <header>
+    <section class="navigation">
+    <header>        
+        <img src="images/carrot-1-svgrepo-com.svg" alt="Pacific Northwest vegetable garden LOGO" width="100" height="100"> 
         <h1>Central Washington Vegetable Garden Planner</h1>
-        <button class="menu" title="Menu button"></button>
-        <nav class="navigation">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Planning</a></li>
-                <li><a href="#">Watering</a></li>
-            </ul>
-        </nav>
     </header>
+    </section>
     <main>
+        <section class="purpose">
+            <h2>Plan when to plant your vegetable garden</h2>
+            <p> This website will target gardeners living in Central Washington. It will assist vegetable gardeners in
+                determining what plants to plant in spring versus summer. users will be able to select from an assortment 
+                of common home-grown vegetables. Based on their selections, the website will display the estimated best 
+                planting times, including whether seeds should be started indoors or planted outdoors as well as local frost dates.</p>
+        </section>
+        <section class="scenarios">
+            <h3>Scenarios</h3>
+            <p> Why are frost dates important? Frost dates are important for gardeners to understand to keep plants growing 
+                healthy and thriving. Some plants when exposed to frost can become damaged or even die.
+            </p>
+            <p>can frost sensitive plants be started indoors earlier to extend the growing season? 
+                Yes, starting frost-sensitive plants indoors can allow gardeners to extend the growing season. By starting seeds indoors, 
+                gardeners can give plants a head start before transplanting them outdoors after the last frost date. This can lead to earlier
+                harvests and a longer growing season for certain crops.
+            </p>
+        </section>
+        <section class="wireframes">
         <div class="image">
-            <picture>
-                <source srcset="images/garden-large.webp" media="(min-width: 500px)">
-                <img src="images/garden-small.webp" alt="peaceful river" width="200" height="150">
-            </picture>
+            <img src="images/Untitled-Diagram-Large.webp" alt=" Wireframe of Website layout wider view" width="500" height="400">
+            <img src="images/Untitled-Diagram-Small.webp" alt="Wireframe of Website layout mobile view" width="500" height="400">
         </div>
-        
+        </section>
     </main>
-    <footer></footer>
+    <footer><p>©️<span id="currentYear"></span> 🎶 Julean Chantry 🎶 USA </p>
+        <p>Last Modified: <span id="lastModified"></span></p></footer>
 </body>
 </html>
