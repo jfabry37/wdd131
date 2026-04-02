@@ -34,11 +34,14 @@ header{
     left: 5%;
     border: solid var(--border-color);
     padding: 5px;
+    justify-self: left;
+    align-self: center;
 }
 
 h1{
     bottom: 1%;
     padding: 45px;
+    justify-self: center;
 }
 
 .name,
