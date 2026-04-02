@@ -41,6 +41,7 @@ h1{
     padding: 45px;
 }
 
+.name,
 .purpose,
 .scenarios
 {
@@ -61,6 +62,7 @@ h1{
     border: 5px solid var(--border-color);
 
 }
+
 footer{
     font-size: small;
     text-align: center;
