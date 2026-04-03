@@ -82,7 +82,7 @@ footer{
 .optional{
     font-weight: normal;
     font-size: 0.9em;
-    color: blue;
+    color: rgb(5, 5, 165);
 }
 
 .name label{
