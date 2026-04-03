@@ -24,8 +24,8 @@
         <legend>
             <label for="pName">Product Name
                 <select name="pName" id="pName" required>
-                    <option value="">Select a Product...</option>
-                    <option value=""></option>
+                    <option value="" disabled selected>Select a Product...</option>
+                    
                 </select>
             </label>
         </legend>
@@ -36,7 +36,7 @@
         <legend>
 
             <div class="star">Overall Rating</div>
-            <label for="oneStar">&star;<input type="radio" name="rating" value="oneStar" id="oneStar"></label>
+            <label for="oneStar">&star;<input type="radio" name="rating" value="oneStar" id="oneStar" required></label>
             <label for="twoStar">&star;&star;<input type="radio" name="rating" value="twoStar" id="twoStar" required></label>
             <label for="threeStar">&star;&star;&star;<input type="radio" name="rating" value="threeStar" id="threeStar" required></label>
             <label for="fourStar">&star;&star;&star;&star;<input type="radio" name="rating" value="fourStar" id="fourStar" required></label>
