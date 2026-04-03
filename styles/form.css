@@ -92,6 +92,7 @@ footer{
     font-weight: normal;
     font-size: 0.9em;
     color: rgb(5, 5, 165);
+    margin-left: 0.25rem;
 }
 
 .name label{
