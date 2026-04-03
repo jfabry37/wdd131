@@ -64,10 +64,9 @@ legend{
 }
 
 .features input[type="checkbox"]{
-    width: 1.1rem;
-    height: 1.1rem;
+    width: 2rem;
+    height: 1.5rem;
     margin-right: 0.4rem;
-    accent-color: var(--primary-color);
 }
 
 .features label{
