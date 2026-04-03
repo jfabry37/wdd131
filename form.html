@@ -19,49 +19,75 @@
 
 <main>
     <form method="get" action="review.html">
-        <legend class="product">
-            <label>Product Name
+
+        <fieldset class="product">
+        <legend>
+            <label for="pName">Product Name
                 <select name="pName" id="pName" required>
                     <option value="">Select a Product...</option>
                     <option value=""></option>
                 </select>
             </label>
         </legend>
-        <legend class="rating">
+        </fieldset>
+
+
+        <fieldset class="rating">
+        <legend>
+
             <div class="star">Overall Rating</div>
-            <label>&star;<input type="radio" name="rating" id="onestar" required></label>
-            <label>&star;&star;<input type="radio" name="rating" id="twostar" required></label>
-            <label>&star;&star;&star;<input type="radio" name="rating" id="threestar" required></label>
-            <label>&star;&star;&star;&star;<input type="radio" name="rating" id="fourstar" required></label>
-            <label>&star;&star;&star;&star;&star;<input type="radio" name="rating" id="fivestar" required></label>
-            
+            <label for="oneStar">&star;<input type="radio" name="rating" id="oneStar" required></label>
+            <label for="twoStar">&star;&star;<input type="radio" name="rating" id="twoStar" required></label>
+            <label for="threeStar">&star;&star;&star;<input type="radio" name="rating" id="threeStar" required></label>
+            <label for="fourStar">&star;&star;&star;&star;<input type="radio" name="rating" id="fourStar" required></label>
+            <label for="fiveStar">&star;&star;&star;&star;&star;<input type="radio" name="rating" id="fiveStar" required></label>
+        
         </legend>
-        <legend class="install">
-            <label>Date of Installation
-                <input type="date" name="installationDate" id="InstallationDate" required>
+        </fieldset>
+
+
+        <fieldset class="install">
+        <legend>
+            <label for="installationDate">Date of Installation
+                <input type="date" name="installationDate" id="installationDate" required>
             </label>
         </legend>
-        <legend class="features">
+        </fieldset>
+
+        <fieldset class="features">
+        <legend>
         <div>Useful Features</div>
-        <label><input type="checkbox" name="durability" id="durability" value="yes">Durability</label>
-        <label><input type="checkbox" name="ease" id="ease" value="yes">Ease of Use</label>
-        <label><input type="checkbox" name="performance" id="performance" value="yes">Performance</label>
-        <label><input type="checkbox" name="design" id="design" value="yes">Design</label>
+        <label for="durability"><input type="checkbox" name="durability" id="durability" value="yes">Durability</label>
+        <label for="ease"><input type="checkbox" name="ease" id="ease" value="yes">Ease of Use</label>
+        <label for="performance"><input type="checkbox" name="performance" id="performance" value="yes">Performance</label>
+        <label for="design"><input type="checkbox" name="design" id="design" value="yes">Design</label>
         </legend>
-        <legend class="review">
-            <label>Written Review <div class="optional">(optional)</div>
+        </fieldset>
+
+        <fieldset class="review">
+        <legend>
+            <label for="review">Written Review <div class="optional">(optional)</div>
                 <textarea name="review" id="review" cols="30" rows="5" placeholder="Write your review here..."></textarea>
             </label>
         </legend>
-        <legend class="name">
-            <label>Your Name
+        </fieldset>
+
+
+        <fieldset class="name">
+        <legend>
+            <label for="yourName">Your Name
                 <div class="optional">(optional)</div>
                 <input type="text" name="yourName" id="yourName">
             </label>
         </legend>
-        <legend class="submit">
+        </fieldset>        
+
+
+        <fieldset class="submit">
+        <legend>
             <input type="submit" value="Post Review">
-        </legend>     
+        </legend>
+        </fieldset>     
     </form>
 </main>
     <footer> 
