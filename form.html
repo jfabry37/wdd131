@@ -20,8 +20,7 @@
 <main>
     <form method="get" action="review.html">
         <legend class="product">
-            <!-- <legend></legend> -->
-            <label>Product Name*
+            <label>Product Name
                 <select name="pName" id="pName" required>
                     <option value="">Select a Product...</option>
                     <option value=""></option>
@@ -29,25 +28,26 @@
             </label>
         </legend>
         <legend class="rating">
-            <div class="star">Overall Rating*</div>
-                <label><input type="radio" name="rating" id="onestar" required>&star;</label>
-                <label><input type="radio" name="rating" id="twostar" required>&star;&star;</label>
-                <label><input type="radio" name="rating" id="threestar" required>&star;&star;&star;</label>
-                <label><input type="radio" name="rating" id="fourstar" required>&star;&star;&star;&star;</label>
-                <label><input type="radio" name="rating" id="fivestar" required>&star;&star;&star;&star;&star;</label>
-            </div>
+            <div class="star">Overall Rating</div>
+            <label>&star;<input type="radio" name="rating" id="onestar" required></label>
+            <label>&star;&star;<input type="radio" name="rating" id="twostar" required></label>
+            <label>&star;&star;&star;<input type="radio" name="rating" id="threestar" required></label>
+            <label>&star;&star;&star;&star;<input type="radio" name="rating" id="fourstar" required></label>
+            <label>&star;&star;&star;&star;&star;<input type="radio" name="rating" id="fivestar" required></label>
+            
         </legend>
         <legend class="install">
-            <label>Date of Installation*
+            <label>Date of Installation
                 <input type="date" name="installationDate" id="InstallationDate" value="InstallationDate" required>
             </label>
-        </legend class="features">
+        </legend>
+        <legend class="features">
         <div>Useful Features</div>
         <label><input type="checkbox" name="durability" id="durability" value="yes">Durability</label>
         <label><input type="checkbox" name="ease" id="ease" value="yes">Ease of Use</label>
         <label><input type="checkbox" name="performance" id="performance" value="yes">Performance</label>
         <label><input type="checkbox" name="design" id="design" value="yes">Design</label>
-        <legend>
+        </legend>
         <legend class="review">
             <label>Written Review <div class="optional">(optional)</div>
                 <textarea name="review" id="review" cols="30" rows="5" placeholder="Write your review here..."></textarea>
