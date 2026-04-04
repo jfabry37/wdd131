@@ -37,6 +37,7 @@ const short = document.getElementById("lastModified").innerHTML = document.lastM
 
 
 const select = document.getElementById("pName");
+
     function productList() {
     products.forEach((product) => {
         const option = document.createElement("option");
@@ -46,18 +47,19 @@ const select = document.getElementById("pName");
     });
 }
 
-productList();
+if(select) {productList();}
 
 const numReviews = document.querySelector(".numReviews");
+
+if (numReviews) {   
 let reviewCount = Number(window.localStorage.getItem("numReviews-ls")) || 0;
 
 if (reviewCount !== 0){
     numReviews.textContent = reviewCount;
-}
-else{
+  } else {
     numReviews.textContent = "You are the first to review a product!";
-}
+  }
 
 reviewCount++;
 window.localStorage.setItem("numReviews-ls", reviewCount);
-
+}
