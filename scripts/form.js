@@ -34,3 +34,16 @@ const year = document.querySelector('#currentYear');
 const today = new Date();
 year.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`;
 const short = document.getElementById("lastModified").innerHTML = document.lastModified;
+
+
+const select = document.getElementById("pName");
+    function productList() {
+    products.forEach((product) => {
+        const option = document.createElement("option");
+        option.value = product.id;
+        option.textContent = product.name;
+        select.appendChild(option);
+    });
+}
+
+productList();
