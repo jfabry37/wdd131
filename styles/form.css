@@ -18,9 +18,15 @@
     }
 }
 
+.confirmation{
+    background-color: var(--background-color);
+    text-align: center;
+    padding: 1em;
+    height: 100vh;
+    border: solid 2px var(--primary-color);
+}
 
 body{
-    
     margin: 0 auto;
     padding: 0.5em;
 }
