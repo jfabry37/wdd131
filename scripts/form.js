@@ -47,3 +47,17 @@ const select = document.getElementById("pName");
 }
 
 productList();
+
+const numReviews = document.querySelector(".numReviews");
+let reviewCount = Number(window.localStorage.getItem("numReviews-ls")) || 0;
+
+if (reviewCount !== 0){
+    numReviews.textContent = reviewCount;
+}
+else{
+    numReviews.textContent = "You are the first to review a product!";
+}
+
+reviewCount++;
+window.localStorage.setItem("numReviews-ls", reviewCount);
+
