@@ -10,9 +10,19 @@
     box-sizing: border-box;
 }
 
+@media (min-width: 640px){
+    body{
+        padding: 0.5em;
+        max-width: 30em;
+        background-color: var(--background-color);
+    }
+}
+
+
 body{
-    max-width: 500px;
+    
     margin: 0 auto;
+    padding: 0.5em;
 }
 header{
     background-color: var(--primary-color);
@@ -27,9 +37,30 @@ form{
     border-radius: 5px;
 }
 
-label, 
-div
-{
+fieldset{
+    border: none;
+}
+ 
+.product legend,
+.install legend,
+.features legend{
+    width: 15rem;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.review legend,
+.name legend{
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.rating legend{
+    font-weight: bold;
+}
+
+label{   
+    width: 100%;
     display: block;
     margin-bottom: 0.2em;
 }
@@ -44,20 +75,16 @@ div
 .install input[type="date"]{
     padding: 5px;
 }
-legend{
-    margin-bottom: 1em;
-    font-weight: bold;
-}
-.rating{
+
+
+.ratingOptions{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    margin-bottom: 1em;
 }
 
-.star{
-    grid-column: span 6;
-}
-
-.rating label{
+.ratingOptions label{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,10 +109,15 @@ footer{
     padding: 1em;
 }
 
-.review label
-{
-    display: grid;
-    grid-template-columns: 7rem 1fr;
+.review label,
+.name label{
+display: grid;
+}
+
+.review legend,
+.name legend,
+.rating legend{
+    width: 100%;
 }
 
 .optional{
@@ -95,15 +127,18 @@ footer{
     margin-left: 0.25rem;
 }
 
-.name label{
-    display: grid;
-    grid-template-columns: 5rem 1fr;
-}
-
 .review textarea,
 .name input[type="text"]{
-    grid-column: span 2;
+    display: inline-block;
     padding: 5px;
+}
+
+.name input[type="text"]{
+    padding-bottom: 20px;
+}
+
+.submit legend{
+    width: 100%;
 }
 
 input[type="submit"]{
