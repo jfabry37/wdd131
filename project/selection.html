@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Web Development Fundamentals:Central Washington Vegetable Garden Planner - index page</title>
+    <meta name="description" content="A website to help gardeners in Central Washington plan their vegetable gardens based on planting times and frost dates. 
+    This is the index page, which will provide an overview of the information available on the site.">
+    <meta name="author" content="Julean Chantry">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <script src="scripts/siteplan.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <header class="navigation">        
+        <img src="images/carrot-1-svgrepo-com.svg" alt="Pacific Northwest vegetable garden LOGO" width="100" height="100"> 
+        <h1>Central Washington Vegetable Garden Planner</h1>
+        <button id="hamburger-menu" href="#"></button>
+        <nav id="siteNav">
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="selection.html">Selection</a></li>
+                <li><a href="protection.html">Frost Protection</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="image">
+            <picture>
+            <source srcset="images/garden-large.webp" media="(min-width: 600px)">
+            <img src="images/garden-small.webp" alt="peaceful garden"  loading="lazy" width="200" height="150">
+            </picture>
+        </div>
+
+        <section class="info1"> 
+
+            <!-- table of plants to choose from -->
+
+            <h2>Vegetable Selection</h2>
+            <div class="plant-list">
+            <button class="cold">Cold Weather Plants</button>
+            <button class="warm">Warm Weather Plants</button>
+            <button class="all">All Plants</button>
+            </div>
+        </section>
+        <section class="info2">
+
+            <!-- table display information for selected plant:
+            when to plant, indoors or outdoors,
+             and frost date for region -->
+            <h2>Selected Vegetable Planting Information</h2>
+            <div class="plant-info"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>©️<span id="currentYear"></span> 🎶 Julean Chantry 🎶 USA </p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
