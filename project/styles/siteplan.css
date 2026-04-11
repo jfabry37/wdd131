@@ -24,9 +24,23 @@ header{
     padding: 2em 2px;
     text-align: center;
     width: 100%;
-    border-bottom:1rem solid var(--border-color) ;
+    border-bottom: .5rem solid var(--border-color) ;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#hamburger-menu{
+    justify-self: right;
+    align-self: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: .5em;
+    margin: 0 1em;
+}
+
+.navigation{
+    list-style: none;
 }
 
  .navigation img{
@@ -39,14 +53,13 @@ header{
     align-self: center;
 }
 
+
 .navigation a{
     display: block;
     padding: 1em;
     background-color: var(--background-color);
     color: var(--text-color);
-    border: .2em solid var(--border-color);
     text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
 }
 
 .navigation a:hover,
@@ -61,6 +74,8 @@ header{
 
 #siteNav.open{
     display: block;
+    grid-column: 3/4;
+    grid-row: 1/2;
 }
 
 
@@ -78,38 +93,108 @@ header{
 h1{
     bottom: 1%;
     padding: 45px;
+    grid-column: span 3;
+    grid-row: 2/3;
     justify-self: center;
+
 }
 
 h1,h2{
     font-family: var(--accent-font);
 }
-/* .name,
-.purpose,
-.scenarios,
-.colors,
-.typography
-{
-    padding: 1em;
-    background-color: var(--secondary-color);
-    margin: .5rem;
-    border:2px solid var(--border-color);
-} */
 
-/* .scenarios p{
-    padding: .5em;
-} */
+h2{
+    margin-bottom: 1rem;
+}
 
 .image{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
 .image img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     margin: 1rem;
-    border: 5px solid var(--border-color);
+    align-self: center;
+    border: .5rem solid var(--border-color);
+}
 
+.info1,
+.info2{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: .5rem solid var(--border-color);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.table{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--background-color);
+    border: .5rem solid var(--border-color);
+    padding: 1rem;
+    margin: 0 1rem 1rem 1rem;
+}
+
+.table button{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: .2em solid var(--border-color);
+    padding: 1rem;
+    margin: .25em;
+    /* cursor: pointer; */
+}
+
+.table button:hover,
+.table button:focus-visible,
+.table button:active{
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+}
+
+.options{
+    border: none;
+    display: grid;
+    grid-template-rows: 5em 1fr;
+    border-bottom: .5rem solid var(--border-color);
+}
+
+.options h2{
+    grid-row: 1/2;
+    justify-self: center;
+}
+
+.guide{
+    border:none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.plant-info section{
+    border: .2em solid var(--border-color);
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.plant-info p,
+.plant-info img{
+    margin: 0.5rem;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center; */
+    
 }
 
 footer{
@@ -117,7 +202,7 @@ footer{
     text-align: center;
     color: var(--text-color);
     background-color: var(--background-color);
-    border-top: 1rem solid var(--border-color);
+    border-top: .5rem solid var(--border-color);
     padding: 1rem;
     width: 100%;
 }
@@ -126,6 +211,7 @@ footer{
 
     #siteNav{
         display:flex;
+        grid-column: 3/4;
     }
 
     #siteNav li{
@@ -140,4 +226,9 @@ footer{
     #hamburger-menu{
         display: none;
     }
+
+    .image img{
+    max-width: 800px;
+    }
+
 }
