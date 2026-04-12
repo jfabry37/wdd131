@@ -117,6 +117,9 @@ h2{
 .image{
     display: flex;
     justify-content: center;
+    width: min(90%, 800px);
+    margin: 0 auto;
+    
 }
 
 .image img{
@@ -296,7 +299,7 @@ footer{
     }
 
     .image img{
-    max-width: 800px;
+    max-width: 80%;
     }
 
     .wf1{
@@ -312,7 +315,7 @@ footer{
 
     .submissionConfirmation{
         display: grid;
-         width: min(90%, 800px);
+        width: min(90%, 600px);
     }
 
 

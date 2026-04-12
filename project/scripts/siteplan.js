@@ -60,25 +60,27 @@ createPlantsCard(plants);
 
 
 const coldButton = document.querySelector('.cold');
-coldButton.addEventListener('click', () => {
-    localStorage.setItem('filter', 'cold');
-    createPlantsCard(plants.filter(plant => (plant.plantFrost === "Frost-tolerant")
-        
-));
-});
+if(coldButton){
+    coldButton.addEventListener('click', () => {
+        localStorage.setItem('filter', 'cold');
+        createPlantsCard(plants.filter(plant => (plant.plantFrost === "Frost-tolerant")
+        ));       
+})};
 
 const allButton = document.querySelector('.all');
+if(allButton){
 allButton.addEventListener('click', () => {
     localStorage.setItem('filter', 'all');
     createPlantsCard(plants);
-});
+})};
 
 const warmButton = document.querySelector('.warm');
+if(warmButton){
 warmButton.addEventListener('click', () => {
     localStorage.setItem('filter', 'warm');
     createPlantsCard(plants.filter(plant => (plant.plantFrost === "Frost-sensitive")
     ));
-});
+})};
 
 function addLabelText(parent, labelText, value){
     const span = document.createElement("span");
@@ -94,6 +96,7 @@ function addLabelText(parent, labelText, value){
 
 function createPlantsCard(filteredPlants){
     const container = document.querySelector('.plant-info');
+    if (!container) return;
     container.innerHTML = "";
     filteredPlants.forEach(plant => {
         if(!plant.plantName)return;
