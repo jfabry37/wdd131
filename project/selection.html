@@ -19,7 +19,7 @@
     <header class="navigation">        
         <img src="images/carrot-1-svgrepo-com.svg" alt="Pacific Northwest vegetable garden LOGO" width="100" height="100"> 
         <h1>Central Washington Vegetable Garden Planner</h1>
-        <button id="hamburger-menu" href="#"></button>
+        <button id="hamburger-menu" aria-label="Toggle Menu"></button>
         <nav id="siteNav">
             <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
@@ -55,6 +55,23 @@
         </section>
         </div>
         </section>
+
+
+
+<!-- enclose label and input. -->
+
+
+        <form method="get" action="confirmation.html" class="wf1">
+            <label for="name">Name:
+            <input type="text" id="name" name="name" required></label>
+            <label for="email">Email:
+            <input type="email" id="email" name="email" required></label>
+            <label for="plant">What plant would you have us add to the List?:
+            <input type="text" id="plant" name="plant" required></label>
+            <button type="submit">Plant Suggestion</button>
+        </form>
+        
+
     </main>
 
     <footer>

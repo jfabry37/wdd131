@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Web Development Fundamentals:Central Washington Vegetable Garden Planner - Frost Protection</title>
+    <title>WDD 131 - Web Development Fundamentals:Central Washington Vegetable Garden Planner - confirmation page</title>
     <meta name="description" content="A website to help gardeners in Central Washington plan their vegetable gardens based on planting times and frost dates. 
-    This page provides information on frost protection methods for vegetable gardens.">
+    This is the confirmation page, which will provide feedback on the user's submission.">
     <meta name="author" content="Julean Chantry">
     <link rel="stylesheet" href="styles/siteplan.css">
     <script src="scripts/siteplan.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
 
 </head>
 <body>
@@ -28,30 +27,22 @@
             </ul>
         </nav>
     </header>
-
-
+    
     <main>
+        <div class="submissionConfirmation">
+            <h2>Thank you for your submission!</h2>
+            <p>Your suggestion has been sent.</p>
+        </div>
+
         <div class="image">
             <picture>
-            <source srcset="images/garden-frosted-large.webp" media="(min-width: 600px)">
-            <img src="images/garden-frosted-small.webp" alt="frosted garden" loading="lazy" width="200" height="150">
+            <source srcset="images/garden-large.webp" media="(min-width: 600px)">
+            <img src="images/garden-small.webp" alt="peaceful garden"  loading="lazy" width="200" height="150">
             </picture>
         </div>
         
-        <section class="info1">
-            <h2> Frost Protection Method: Covering Plants</h2>
-            <p>One common way to protect vegetable plants from frost is by covering them. Gardeners often use materials like blankets,
-                sheets, or frost cloths to trap heat from the soil and keep plants warmer overnight. This simple barrier helps prevent 
-                ice from forming directly on the leaves, reducing damage during cold temperatures.</p>
-        </section>
-        <section class="info2">
-            <h2>Frost Protection Methods: Watering</h2>
-            <p>Another effective method is watering the soil before a frost. Moist soil holds heat better than dry soil and can release
-                 warmth throughout the night, helping to keep plants slightly warmer. This added heat can make a big difference in preventing 
-                 frost damage, especially during short cold snaps.
-            </p>
-        </section>
     </main>
+
 
     <footer>
         <p>©️<span id="currentYear"></span> 🎶 Julean Chantry 🎶 USA </p>

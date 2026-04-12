@@ -57,8 +57,11 @@ const plants = [
 
 createPlantsCard(plants);
 
+
+
 const coldButton = document.querySelector('.cold');
 coldButton.addEventListener('click', () => {
+    localStorage.setItem('filter', 'cold');
     createPlantsCard(plants.filter(plant => (plant.plantFrost === "Frost-tolerant")
         
 ));
@@ -66,11 +69,13 @@ coldButton.addEventListener('click', () => {
 
 const allButton = document.querySelector('.all');
 allButton.addEventListener('click', () => {
+    localStorage.setItem('filter', 'all');
     createPlantsCard(plants);
 });
 
 const warmButton = document.querySelector('.warm');
 warmButton.addEventListener('click', () => {
+    localStorage.setItem('filter', 'warm');
     createPlantsCard(plants.filter(plant => (plant.plantFrost === "Frost-sensitive")
     ));
 });
