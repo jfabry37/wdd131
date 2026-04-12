@@ -304,6 +304,7 @@ footer{
 
     .wf1{
         width: min(90%, 600px);
+        margin: 0 auto;
     }
 
     .wf1 button[type="submit"],
@@ -316,6 +317,7 @@ footer{
     .submissionConfirmation{
         display: grid;
         width: min(90%, 600px);
+       
     }
 
 
